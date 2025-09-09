@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Panda Face</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: lightgreen;
+    }
+
+    .panda {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: white;
+      border-radius: 50%;
+      border: 3px solid #ccc;
+    }
+
+    .ear {
+      width: 60px;
+      height: 60px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: -30px;
+    }
+
+    .ear.left {
+      left: -20px;
+    }
+
+    .ear.right {
+      right: -20px;
+    }
+
+    .eye-patch {
+      width: 50px;
+      height: 70px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 60px;
+    }
+
+    .eye-patch.left {
+      left: 30px;
+    }
+
+    .eye-patch.right {
+      right: 30px;
+    }
+
+    .eye {
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 20px;
+      left: 15px;
+    }
+
+    .nose {
+      width: 30px;
+      height: 20px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="panda">
+    <div class="ear left"></div>
+    <div class="ear right"></div>
+
+    <div class="eye-patch left">
+      <div class="eye"></div>
+    </div>
+    <div class="eye-patch right">
+      <div class="eye"></div>
+    </div>
+
+    <div class="nose"></div>
+  </div>
+</body>
+</html>
